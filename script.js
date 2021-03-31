@@ -1,22 +1,25 @@
-const nama = document.querySelector('.nama');
+const pilihan = document.querySelector('.nama, .gambar');
 
-const klikNama = nama.addEventListener('click', function(){
+pilihan.addEventListener('click', function(nama, gambar){
 		const getNama = nama.className;
-		console.log(getNama);
-	})
+		const getGambar = gambar.className;
+		// console.log(nama);	
+		if(nama == 'nama' || gambar == 'gambar') {
+		alert('anda menang');	
+	}
+})
 
-const gambar = document.querySelector('img');
+const gambar = document.querySelector('.gambar');
 
-const klikGambar = gambar.addEventListener('click', function(){
+gambar.addEventListener('click', function(){
 		const getGambar = gambar.className;
 		console.log(getGambar);
 	})
 
-
-
-
-// if (klikNama == 'nama' && klikGambar == 'gambar') {
-// 	alert('kamu benar');
-// } else {
-// 	alert('kamu salah');
+// function getHasil(nama, gambar) {
+// 	if(nama == 'nama' && gambar == 'gambar') {
+// 		alert('anda menang');
+// 	} 
 // }
+
+// getHasil(getNama,getGambar);
