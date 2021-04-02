@@ -1,38 +1,29 @@
-function getHasil(name, pict) {
-	if (name == 'nama' && pict == 'gambar') {alert('oke');} else {alert('maaf salah')};
-};
+function getHasil(e) {
+	// const pilihan = document.querySelector('li');
+	const jawaban = e.target.className;
+	if (jawaban == 'benar') {alert('anda benar')} else {alert('anda salah')};
+	
+}
 
-// function pilNama(e) {
-// 	document.querySelector('.nama');
-// 	const getNama = e.target.className;
-// 	// console.log(getNama);
-// 	// return getNama;
-// }
-
-const pilihan = document.querySelectorAll('.pilihan');
-pilihan.forEach(function(nama) {
-	nama.addEventListener('click', function(){
-	// document.querySelector('.gambar');
-	const tes = document.querySelector('.nama');
-	const tos = document.querySelector('.gambar');
-	const getNama = tes.className;
-	const getGambar = tos.className;
-
-	getHasil(getNama, getGambar);
-	});	
+const hasil = document.querySelectorAll('li');
+hasil.forEach(function(pil) {
+		pil.addEventListener('click', getHasil);
 })
 
+const next = document.querySelector('.next');
+next.addEventListener('click', function() {
+	const satu = document.querySelector('.soalSatu');
+	satu.style.display = 'none';
 
+	const dua = document.querySelector('.soalDua');
+	dua.style.display = 'block';
+})
 
+const prev = document.querySelector('.prev');
+prev.addEventListener('click', function() {
+	const satu = document.querySelector('.soalSatu');
+	satu.style.display = 'block';
 
-// function pilGambar(e) {
-// 	document.querySelector('.gambar');
-// 	const getGambar = e.target.className;
-// 		// console.log(getGambar);
-// 		return getGambar;
-// }
-
-// const gambar = document.querySelector('.gambar');
-// 	gambar.addEventListener('click', pilGambar);
-
-
+	const dua = document.querySelector('.soalDua');
+	dua.style.display = 'none';
+})

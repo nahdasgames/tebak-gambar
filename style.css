@@ -1,19 +1,33 @@
-div {
-	margin:0;
-	width: 300px;
-	height: 300px;
-	background-color: pink;
-	line-height: 300px;
+li {
+	text-align: center;
+	line-height: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	display: inline-block;
+	cursor: pointer;
 }
 
-span {
-	margin-left: 120px;
+.next {
+	line-height: 50px;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	background-color: salmon;
+	cursor: pointer;
+	display: inline-block;
 }
 
-img {
-	width: 300px;
-	height: 300px;
-	position: absolute;
-	top: 0;
-	left: 500px;
+.prev {
+	line-height: 50px;
+	text-align: center;
+	width: 150px;
+	height: 50px;
+	background-color: salmon;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.soalDua {
+	display: none;
 }
