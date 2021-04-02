@@ -10,20 +10,30 @@ hasil.forEach(function(pil) {
 		pil.addEventListener('click', getHasil);
 })
 
-const next = document.querySelector('.next');
-next.addEventListener('click', function() {
-	const satu = document.querySelector('.soalSatu');
-	satu.style.display = 'none';
+// const next = document.querySelectorAll('.next');
+// next.forEach(function(lanjut){
+// 	lanjut.addEventListener('click', function() {
+// 	const satu = document.querySelector('.soalSatu');
+// 	satu.style.display = 'none';
 
-	const dua = document.querySelector('.soalDua');
-	dua.style.display = 'block';
-})
+// 	const dua = document.querySelector('.soalDua');
+// 	dua.style.display = 'block';
+// 	})
+// })
 
-const prev = document.querySelector('.prev');
-prev.addEventListener('click', function() {
-	const satu = document.querySelector('.soalSatu');
-	satu.style.display = 'block';
 
-	const dua = document.querySelector('.soalDua');
-	dua.style.display = 'none';
-})
+
+
+// const prev = document.querySelector('.prev');
+// prev.addEventListener('click', function() {
+// 	const satu = document.querySelector('.soalSatu');
+// 	satu.style.display = 'block';
+
+// 	const dua = document.querySelector('.soalDua');
+// 	dua.style.display = 'none';
+// })
+
+// var lihat;
+// for (lihat in prev) {
+// 	console.log(lihat);
+// }

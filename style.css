@@ -8,7 +8,7 @@ li {
 	cursor: pointer;
 }
 
-.next {
+.next, .prev {
 	line-height: 50px;
 	text-align: center;
 	width: 150px;
@@ -18,16 +18,11 @@ li {
 	display: inline-block;
 }
 
-.prev {
-	line-height: 50px;
-	text-align: center;
-	width: 150px;
-	height: 50px;
-	background-color: salmon;
-	cursor: pointer;
-	display: inline-block;
+a {
+	text-decoration: none;
 }
 
-.soalDua {
+
+/*.soalDua, .soalTiga {
 	display: none;
-}
+}*/
