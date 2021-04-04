@@ -1,12 +1,18 @@
-li {
-	text-align: center;
-	line-height: 100px;
-	width: 100px;
-	height: 100px;
-	background-color: yellow;
-	display: inline-block;
-	cursor: pointer;
+* {
+	font-family: sans-serif;
 }
+
+.menu li {
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	margin: 30px auto;
+	background-color: yellow;
+	border-radius: 30px;
+	display: block;
+	text-align: center;
+}
+
 
 .next, .prev {
 	line-height: 50px;
@@ -22,7 +28,50 @@ a {
 	text-decoration: none;
 }
 
+.close a {
+	color: white;
+}
 
-/*.soalDua, .soalTiga {
-	display: none;
-}*/
+.close {
+	width: 90px;
+	height: 20px;
+	background-color: salmon;
+	text-align: center;
+	position: absolute;
+	right: 333px;
+	top: 70px;
+}
+
+.soal {
+	width: 0;
+	height: 0;
+	background: rgba(0,0,0,0);
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 70px 0;
+	text-align: center;
+}
+
+.soal:target {
+	width: auto;
+	height: auto;
+	background: rgba(0,0,0,.5);
+}
+
+.jwb {
+	margin: 5px;
+	position: relative;
+	bottom: 20px;
+	text-align: center;
+	line-height: 50px;
+	border-radius: 30px;
+	width: 100px;
+	height: 50px;
+	background-color: yellow;
+	display: inline-block;
+	cursor: pointer;
+}

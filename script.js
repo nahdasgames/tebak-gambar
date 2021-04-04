@@ -1,11 +1,11 @@
 function getHasil(e) {
 	// const pilihan = document.querySelector('li');
 	const jawaban = e.target.className;
-	if (jawaban == 'benar') {alert('anda benar')} else {alert('anda salah')};
+	if (jawaban == 'benar jwb') {alert('anda benar')} else {alert('anda salah')};
 	
 }
 
-const hasil = document.querySelectorAll('li');
+const hasil = document.querySelectorAll('.jwb');
 hasil.forEach(function(pil) {
 		pil.addEventListener('click', getHasil);
 })
