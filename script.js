@@ -1,39 +1,46 @@
-function getHasil(e) {
-	// const pilihan = document.querySelector('li');
-	const jawaban = e.target.className;
-	if (jawaban == 'benar jwb') {alert('anda benar')} else {alert('anda salah')};
-	
-}
-
 const hasil = document.querySelectorAll('.jwb');
-hasil.forEach(function(pil) {
-		pil.addEventListener('click', getHasil);
+const menu = document.querySelector('.menu');
+const btnHewan = document.querySelector('.hewan');
+const btnBuah = document.querySelector('.buah');
+const btnNext = document.querySelectorAll('.next');
+const btnPrev = document.querySelectorAll('.prev');
+const btnKeluar = document.querySelectorAll('.close');
+const soalHewan = document.querySelectorAll('.soal-hewan');
+const hwSatu = document.querySelector('#hw-satu');
+
+
+btnHewan.addEventListener('click', function () {
+	menu.setAttribute("hidden", true);
+
+	hwSatu.removeAttribute("hidden");
 })
 
-// const next = document.querySelectorAll('.next');
-// next.forEach(function(lanjut){
-// 	lanjut.addEventListener('click', function() {
-// 	const satu = document.querySelector('.soalSatu');
-// 	satu.style.display = 'none';
+btnBuah.addEventListener('click', function () {
+	btnHewan.setAttribute("hidden", true);
+	btnBuah.setAttribute("hidden", true);
+})
 
-// 	const dua = document.querySelector('.soalDua');
-// 	dua.style.display = 'block';
-// 	})
-// })
+function getHasil(e) {
+	// const pilihan = document.querySelector('li');
+	const jawaban = e.target.value;
+	if (jawaban == 'benar') {
+		alert('anda benar')
+	} else {
+		alert('anda salah')
+	};
 
+}
 
+hasil.forEach(function (pil) {
+	pil.addEventListener('click', getHasil);
+})
 
+btnKeluar.forEach(function (keluar) {
+	keluar.addEventListener('click', function () {
+		menu.removeAttribute("hidden");
 
-// const prev = document.querySelector('.prev');
-// prev.addEventListener('click', function() {
-// 	const satu = document.querySelector('.soalSatu');
-// 	satu.style.display = 'block';
-
-// 	const dua = document.querySelector('.soalDua');
-// 	dua.style.display = 'none';
-// })
-
-// var lihat;
-// for (lihat in prev) {
-// 	console.log(lihat);
-// }
+		for (let hewan of soalHewan) {
+			hewan.setAttribute("hidden", true);
+		}
+	})
+})

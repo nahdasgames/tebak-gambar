@@ -1,58 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nahda</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-	<div class="menu" id="menu">
-		<ul>
-			<li class="pilihan">
-				<a href="#satu">HEWAN</a></li>
-			<li class="pilihan">BUAH</li>
-		</ul>
-	</div>
-	
-	<div class="soal" id="satu">
-		<div class="close">
-			<a href="#menu">KELUAR</a>	
+
+	<div class="layar">
+		<div class="menu" id="menu">
+			<button class="hewan pilihan">HEWAN</button>
+			<button class="buah pilihan">BUAH</button>
 		</div>
-		<img src="img/rsz_apel.jpg" alt="apel" class="gambar pilihan">
-		<ul class="pilgan">
-			<li class="salah jwb"><span >FAISAL</span></li>
-			<li class="benar jwb"><span >KELLY</span></li>
-			<li class="salah jwb"><span >YOUBEL</span></li>
-			<li class="salah jwb"><span >ARKI</span></li>
-		</ul>
-		<div class="next"><a href="#dua">SELANJUTNYA</a><span></span></div>
-	</div>
-	<div class="soal" id="dua">
-		<img src="Sandy.jpeg" alt="Sandy" class="gambar pilihan">
-		<ul class="pilgan">
-			<li class="salah jwb"><span >KOMING</span></li>
-			<li class="salah jwb"><span >ARKI</span></li>
-			<li class="benar jwb"><span >SANDY</span></li>
-			<li class="salah jwb"><span >DODO</span></li>
-		</ul>
-		<div class="prev"><a href="#satu"></a><span>SEBELUMNYA</span></div>
-		<div class="next"><a href="#tiga"></a><span>SELANJUTNYA</span></div>
-	</div>
-	<div class="soal" id="tiga">
-		<img src="Kelly.jpg" alt="Kelly" class="gambar pilihan">
-		<ul class="pilgan">
-			<li class="salah jwb"><span >FAISAL</span></li>
-			<li class="benar jwb"><span >KELLY</span></li>
-			<li class="salah jwb"><span >YOUBEL</span></li>
-			<li class="salah jwb"><span >ARKI</span></li>
-		</ul>
-		<div class="prev"><span>SEBELUMNYA</span></div>
-		<div class="next"><span>SELANJUTNYA</span></div>
+
+		<div class="soal-hewan" id="hw-satu" hidden>
+			<img src="img/rsz_apel.jpg" alt="apel" class="gambar pilihan">
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">PISANG</button>
+				<button class="jwb" type="button" value="benar">APEL</button>
+				<button class="jwb" type="button" value="salah">ANGGUR</button>
+				<button class="jwb" type="button" value="salah">JERUK</button>
+			</div>
+			<div class="prev"><a href="#satu"><button type="button">SEBELUMNYA</button></a></div>
+			<div class="close"><a href=""><button type="button">KELUAR</button></a></div>
+			<div class="next"><a href="#dua"><button type="button">SELANJUTNYA</button></a></div>
+		</div>
+		<div class="soal-hewan" id="hw-dua" hidden>
+			<img src="Sandy.jpeg" alt="Sandy" class="gambar pilihan">
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">KOMING</button>
+				<button class="jwb" type="button" value="salah">ARKI</button>
+				<button class="jwb" type="button" value="benar">SANDY</button>
+				<button class="jwb" type="button" value="salah">DODO</button>
+			</div>
+			<div class="prev"><a href="#satu"><button type="button">SEBELUMNYA</button></a></div>
+			<div class="close"><a href=""><button type="button">KELUAR</button></a></div>
+			<div class="next"><a href="#tiga"><button type="button">SELANJUTNYA</button></a></div>
+		</div>
+		<div class="soal-hewan" id="hw-tiga" hidden>
+			<img src="Kelly.jpg" alt="Kelly" class="gambar pilihan">
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">FAISAL</button>
+				<button class="jwb" type="button" value="benar">KELLY</button>
+				<button class="jwb" type="button" value="salah">YOUBEL</button>
+				<button class="jwb" type="button" value="salah">ARKI</button>
+			</div>
+			<div class="prev"><a href="#dua"><button type="button">SEBELUMNYA</button></a></div>
+			<div class="close"><a href=""><button type="button">KELUAR</button></a></div>
+			<div class="next"><a href="#satu"><button type="button">SELANJUTNYA</button></a></div>
+		</div>
 	</div>
 
 
 
 	<script src="script.js"></script>
 </body>
+
 </html>
