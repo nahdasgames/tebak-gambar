@@ -9,6 +9,20 @@
 	border: 2px solid black;
 	margin: 0 auto;
 	display: flex;
+	box-sizing: border-box;
+}
+
+.title {
+	width: 500px;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+h1 {
+	font-family: 'Princess Sofia', cursive;
+	font-size: 50px;
 }
 
 .menu button {
@@ -22,24 +36,27 @@
 	display: block;
 	text-align: center;
 	position: relative;
-	top: 250px;
+	top: 200px;
 	border: none;
 	cursor: pointer;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 20px;
 }
 
 
 .btn {
-	line-height: 30px;
+	/* line-height: 30px; */
 	text-align: center;
-	width: 120px;
-	height: 30px;
+	/* width: 120px; */
+	/* height: 50px; */
 	margin-top: 5px;
 	margin-bottom: 8px;
-	background-color: salmon;
+	background-color: black;
 	cursor: pointer;
 	border: none;
-	border-radius: 10px;
 }
+
+
 
 .pilgan {
 	width: 400px;
@@ -61,26 +78,36 @@
 	border: none;
 }
 
-.nav {
+
+
+.soal-hewan,
+.soal-buah {
+	width: 500px;
+	height: auto;
+	margin-top: 30px;
+}
+
+.soal-hewan img,
+.soal-buah img {
+	height: 250px;
+	width: 400px;
+	margin-top: 10px;
 	margin-left: 50px;
+	border-radius: 10px;
+}
+
+.nav {
+	/* margin-left: 50px; */
 	width: 400px;
 	height: auto;
 	display: flex;
 	justify-content: space-between;
 }
 
-.soal-hewan {
-	width: 500px;
-	height: auto;
-	margin-top: 30px;
-}
-
-.soal-hewan img {
-	height: 250px;
-	width: 400px;
-	margin-top: 10px;
-	margin-left: 50px;
-	border-radius: 10px;
+.soal-hewan .img-nav {
+	height: 85px;
+	width: 120px;
+	/* background-color: transparent; */
 }
 
 a {

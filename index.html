@@ -6,63 +6,154 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nahda</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Princess+Sofia&display=swap"
+		rel="stylesheet">
 </head>
 
 <body>
 
 	<div class="layar">
 		<div class="menu" id="menu">
+			<div class="title">
+				<h1>Game for Nahda</h1>
+			</div>
 			<button class="hewan pilihan">HEWAN</button>
 			<button class="buah pilihan">BUAH</button>
 		</div>
 
 		<div class="soal-hewan" id="hw-satu" hidden>
 			<div class="pict">
-				<img src="img/rsz_apel.jpg" alt="apel" class="gambar pilihan">
+				<img src="img/rsz_1ikan.jpg" alt="ikan" class="gambar pilihan">
 			</div>
 			<div class="pilgan">
-				<button class="jwb" type="button" value="salah">PISANG</button>
-				<button class="jwb" type="button" value="benar">APEL</button>
-				<button class="jwb" type="button" value="salah">ANGGUR</button>
-				<button class="jwb" type="button" value="salah">JERUK</button>
+				<button class="jwb" type="button" value="salah">BELUT</button>
+				<button class="jwb" type="button" value="benar">IKAN</button>
+				<button class="jwb" type="button" value="salah">KERANG</button>
+				<button class="jwb" type="button" value="salah">SIPUT</button>
 			</div>
 			<div class="nav">
-				<div class="prev"><button class="btn btn-prev" type="button" value="prev1">SEBELUMNYA</button></div>
-				<div class="close"><button class="btn btn-close" type="button" value="close1">KELUAR</button></div>
-				<div class="next"><button class="btn btn-next" type="button" value="next1">SELANJUTNYA</button></div>
+				<button class="btn btn-prev" type="button" value="prev1">
+					<img class="img-nav" src="img/left-arrow.png" alt="">
+				</button>
+				<!-- <div class="close"><button class="btn btn-close" type="button" value="close1">KELUAR</button></div> -->
+				<button class="btn btn-next" type="button" value="next1">
+					<img class="img-nav" src="img/right-arrow.png" alt="">
+				</button>
 			</div>
 		</div>
 		<div class="soal-hewan" id="hw-dua" hidden>
 			<div class="pic">
-				<img src="Sandy.jpeg" alt="Sandy" class="gambar pilihan">
+				<img src="img/rsz_ayam.jpg" alt="ayam" class="gambar pilihan">
 			</div>
 			<div class="pilgan">
-				<button class="jwb" type="button" value="salah">KOMING</button>
-				<button class="jwb" type="button" value="salah">ARKI</button>
-				<button class="jwb" type="button" value="benar">SANDY</button>
-				<button class="jwb" type="button" value="salah">DODO</button>
+				<button class="jwb" type="button" value="salah">BEBEK</button>
+				<button class="jwb" type="button" value="salah">ANGSA</button>
+				<button class="jwb" type="button" value="benar">AYAM</button>
+				<button class="jwb" type="button" value="salah">BANGAU</button>
 			</div>
 			<div class="nav">
-				<div class="prev"><button class="btn btn-prev" type="button" value="prev2">SEBELUMNYA</button></div>
+				<button class="btn btn-prev" type="button" value="prev2">SEBELUMNYA</button>
 				<!-- <div class="close"><button class="btn btn-close" type="button" value="close2">KELUAR</button></div> -->
-				<div class="next"><button class="btn btn-next" type="button" value="next2">SELANJUTNYA</button></div>
+				<button class="btn btn-next" type="button" value="next2">SELANJUTNYA</button>
 			</div>
 		</div>
 		<div class="soal-hewan" id="hw-tiga" hidden>
 			<div class="pic">
-				<img src="Kelly.jpg" alt="Kelly" class="gambar pilihan">
+				<img src="IMG/rsz_bebek.jpg" alt="bebek" class="gambar pilihan">
 			</div>
-
 			<div class="pilgan">
-				<button class="jwb" type="button" value="salah">FAISAL</button>
-				<button class="jwb" type="button" value="benar">KELLY</button>
-				<button class="jwb" type="button" value="salah">YOUBEL</button>
-				<button class="jwb" type="button" value="salah">ARKI</button>
+				<button class="jwb" type="button" value="benar">BEBEK</button>
+				<button class="jwb" type="button" value="salah">AYAM</button>
+				<button class="jwb" type="button" value="salah">BANGAU</button>
+				<button class="jwb" type="button" value="salah">ANGSA</button>
 			</div>
 			<div class="nav">
-				<div class="prev"><button class="btn btn-prev" type="button" value="prev3">SEBELUMNYA</button></div>
+				<button class="btn btn-prev" type="button" value="prev3">SEBELUMNYA</button>
 				<!-- <div class="close"><button class="btn btn-close" type="button" value="close3">KELUAR</button></div> -->
-				<div class="next"><button class="btn btn-next" type="button" value="next3">SELANJUTNYA</button></div>
+				<button class="btn btn-next" type="button" value="next3">SELANJUTNYA</button>
+			</div>
+		</div>
+		<div class="soal-hewan" id="hw-empat" hidden>
+			<div class="pic">
+				<img src="IMG/rsz_kucing.jpg" alt="kucing" class="gambar pilihan">
+			</div>
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">ANJING</button>
+				<button class="jwb" type="button" value="salah">KELINCI</button>
+				<button class="jwb" type="button" value="salah">KAMBING</button>
+				<button class="jwb" type="button" value="benar">KUCING</button>
+			</div>
+			<div class="nav">
+				<button class="btn btn-prev" type="button" value="prev4">SEBELUMNYA</button>
+				<div class="close"><button class="btn btn-close" type="button" value="close3">KELUAR</button></div>
+				<button class="btn btn-next" type="button" value="next4">SELANJUTNYA</button>
+			</div>
+		</div>
+
+		<!-- BUAH -->
+
+		<div class="soal-buah" id="bu-satu" hidden>
+			<div class="pict">
+				<img src="img/rsz_apel.jpg" alt="apel" class="gambar pilihan">
+			</div>
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">JERUK</button>
+				<button class="jwb" type="button" value="benar">APEL</button>
+				<button class="jwb" type="button" value="salah">KIWI</button>
+				<button class="jwb" type="button" value="salah">MELON</button>
+			</div>
+			<div class="nav">
+				<button class="btn btn-prev" type="button" value="prev5">SEBELUMNYA</button>
+				<!-- <div class="close"><button class="btn btn-close" type="button" value="close5">KELUAR</button></div> -->
+				<button class="btn btn-next" type="button" value="next5">SELANJUTNYA</button>
+			</div>
+		</div>
+		<div class="soal-buah" id="bu-dua" hidden>
+			<div class="pic">
+				<img src="img/rsz_jeruk.jpg" alt="jeruk" class="gambar pilihan">
+			</div>
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">APEL</button>
+				<button class="jwb" type="button" value="salah">MELON</button>
+				<button class="jwb" type="button" value="benar">JERUK</button>
+				<button class="jwb" type="button" value="salah">ANGGUR</button>
+			</div>
+			<div class="nav">
+				<button class="btn btn-prev" type="button" value="prev6">SEBELUMNYA</button>
+				<!-- <div class="close"><button class="btn btn-close" type="button" value="close6">KELUAR</button></div> -->
+				<button class="btn btn-next" type="button" value="next6">SELANJUTNYA</button>
+			</div>
+		</div>
+		<div class="soal-buah" id="bu-tiga" hidden>
+			<div class="pic">
+				<img src="IMG/rsz_melon.jpg" alt="melon" class="gambar pilihan">
+			</div>
+			<div class="pilgan">
+				<button class="jwb" type="button" value="benar">MELON</button>
+				<button class="jwb" type="button" value="salah">MANGGA</button>
+				<button class="jwb" type="button" value="salah">PISANG</button>
+				<button class="jwb" type="button" value="salah">DURIAN</button>
+			</div>
+			<div class="nav">
+				<button class="btn btn-prev" type="button" value="prev7">SEBELUMNYA</button>
+				<!-- <div class="close"><button class="btn btn-close" type="button" value="close7">KELUAR</button></div> -->
+				<button class="btn btn-next" type="button" value="next7">SELANJUTNYA</button>
+			</div>
+		</div>
+		<div class="soal-buah" id="bu-empat" hidden>
+			<div class="pic">
+				<img src="IMG/rsz_pisang.jpg" alt="pisang" class="gambar pilihan">
+			</div>
+			<div class="pilgan">
+				<button class="jwb" type="button" value="salah">JAMBU</button>
+				<button class="jwb" type="button" value="salah">SEMANGKA</button>
+				<button class="jwb" type="button" value="salah">MELON</button>
+				<button class="jwb" type="button" value="benar">PISANG</button>
+			</div>
+			<div class="nav">
+				<button class="btn btn-prev" type="button" value="prev8">SEBELUMNYA</button>
+				<div class="close"><button class="btn btn-close" type="button" value="close8">KELUAR</button></div>
+				<button class="btn btn-next" type="button" value="next8">SELANJUTNYA</button>
 			</div>
 		</div>
 	</div>
