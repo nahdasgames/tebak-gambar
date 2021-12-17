@@ -4,8 +4,8 @@
 
 .layar {
 	width: 500px;
-	height: 700px;
-	background-color: aqua;
+	height: 600px;
+	background-color: rgb(235, 123, 138);
 	border: 2px solid black;
 	margin: 0 auto;
 	display: flex;
@@ -45,15 +45,13 @@ h1 {
 
 
 .btn {
-	text-align: center;
+	/* text-align: center; */
 	width: 0;
 	height: 0;
 	background-color: transparent;
 	cursor: pointer;
 	border: none;
 }
-
-
 
 .pilgan {
 	width: 400px;
@@ -72,9 +70,9 @@ h1 {
 	background-color: yellow;
 	cursor: pointer;
 	border: none;
+	font-family: 'Bubblegum Sans', cursive;
+	font-size: 16px;
 }
-
-
 
 .soal-hewan,
 .soal-buah {
@@ -93,23 +91,26 @@ h1 {
 }
 
 .nav {
-	width: 300px;
+	width: 320px;
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
+	margin-left: 50px;
+	padding: 0;
 }
 
 .soal-hewan .img-nav,
 .soal-buah .img-nav {
-	height: 100px;
-	width: 100px;
+	height: 80px;
+	width: 80px;
 	margin-top: 0px;
+	margin-left: 0;
 }
 
-a {
-	text-decoration: none;
-}
-
-.close a {
-	color: white;
+.soal-hewan .img-home,
+.soal-buah .img-home {
+	width: 65px;
+	height: 65px;
+	margin-left: 10px;
+	margin-right: 0;
 }
