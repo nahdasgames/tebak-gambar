@@ -90,6 +90,42 @@ h1 {
 	border-radius: 10px;
 }
 
+.facts {
+	height: 250px;
+	width: 400px;
+	background-color: aqua;
+	margin-left: 50px;
+	position: absolute;
+	bottom: 357px;
+	border-radius: 10px;
+	opacity: .9;
+	/* display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-around; */
+}
+
+.facts h3,
+.facts h2 {
+	text-align: center;
+}
+
+.facts p {
+	margin: 10px;
+	text-align: center;
+}
+
+.close-facts {
+	width: 70px;
+	height: 30px;
+	background-color: darkorange;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	margin-left: 170px;
+	cursor: pointer;
+}
+
 .nav {
 	width: 320px;
 	height: 100px;

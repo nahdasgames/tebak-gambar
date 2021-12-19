@@ -15,6 +15,9 @@ const buSatu = document.querySelector('#bu-satu');
 const buDua = document.querySelector('#bu-dua');
 const buTiga = document.querySelector('#bu-tiga');
 const buEmpat = document.querySelector('#bu-empat');
+const facts = document.querySelectorAll('.facts');
+const btnClsFacts = document.querySelectorAll('.close-facts');
+const nama = document.querySelectorAll('.nama');
 
 
 btnHewan.addEventListener('click', function () {
@@ -29,13 +32,27 @@ btnBuah.addEventListener('click', function () {
 
 function getHasil(e) {
 	const jawaban = e.target.value;
-	if (jawaban == 'benar') {
-		alert('anda benar')
-	} else {
-		alert('anda salah')
-	};
+	if (jawaban === 'benar') {
+		for (let fact of facts) {
+			fact.removeAttribute("hidden");
+		}
 
+		for (let namas of nama) {
+			namas.innerHTML = e.target.textContent;
+		}
+	} else {
+		alert('anda salah');
+	};
 }
+
+btnClsFacts.forEach(function (close) {
+	close.addEventListener('click', function () {
+		for (let fact of facts) {
+			fact.setAttribute("hidden", true);
+		}
+	})
+})
+
 
 hasil.forEach(function (pil) {
 	pil.addEventListener('click', getHasil);
@@ -58,6 +75,9 @@ btnKeluar.forEach(function (keluar) {
 function nextPrev(hilang, muncul) {
 	hilang.setAttribute("hidden", true);
 	muncul.removeAttribute("hidden");
+	for (let fact of facts) {
+		fact.setAttribute("hidden", true);
+	}
 }
 
 btnNext.forEach(function (next) {
