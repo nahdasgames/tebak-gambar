@@ -18,7 +18,7 @@ const buEmpat = document.querySelector('#bu-empat');
 const facts = document.querySelectorAll('.facts');
 const btnClsFacts = document.querySelectorAll('.close-facts');
 const nama = document.querySelectorAll('.nama');
-
+const github = document.querySelector('.github');
 
 btnHewan.addEventListener('click', function () {
 	menu.setAttribute("hidden", true);
