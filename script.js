@@ -5,11 +5,12 @@ const btnBuah = document.querySelector('.buah');
 const btnNext = document.querySelectorAll('.btn-next');
 const btnPrev = document.querySelectorAll('.btn-prev');
 const btnKeluar = document.querySelectorAll('.btn-close');
+const gambar = document.querySelectorAll('.gambar');
 const soalHewan = document.querySelectorAll('.soal-hewan');
-const hwSatu = document.querySelector('#hw-satu');
-const hwDua = document.querySelector('#hw-dua');
-const hwTiga = document.querySelector('#hw-tiga');
-const hwEmpat = document.querySelector('#hw-empat');
+const hwSatu = document.querySelector('#hw-satu ');
+const hwDua = document.querySelector(' #hw-dua ');
+const hwTiga = document.querySelector('#hw-tiga ');
+const hwEmpat = document.querySelector('#hw-empat ');
 const soalBuah = document.querySelectorAll('.soal-buah');
 const buSatu = document.querySelector('#bu-satu');
 const buDua = document.querySelector('#bu-dua');
@@ -18,7 +19,6 @@ const buEmpat = document.querySelector('#bu-empat');
 const facts = document.querySelectorAll('.facts');
 const btnClsFacts = document.querySelectorAll('.close-facts');
 const nama = document.querySelectorAll('.nama');
-const github = document.querySelector('.github');
 
 btnHewan.addEventListener('click', function () {
 	menu.setAttribute("hidden", true);
@@ -74,7 +74,10 @@ btnKeluar.forEach(function (keluar) {
 
 function nextPrev(hilang, muncul) {
 	hilang.setAttribute("hidden", true);
+
+
 	muncul.removeAttribute("hidden");
+	// muncul.style.animation = "slidePictMuncul 1s";
 	for (let fact of facts) {
 		fact.setAttribute("hidden", true);
 	}
@@ -83,13 +86,21 @@ function nextPrev(hilang, muncul) {
 btnNext.forEach(function (next) {
 	next.addEventListener('click', function () {
 		if (next.value === "next1") {
-			nextPrev(hwSatu, hwDua);
+			// gambar[0].style.animation = "slidePictHilang .5s";
+			// gambar[1].style.animation = "slidePictMuncul .5s";
+			setTimeout(nextPrev(hwSatu, hwDua), 1000);
 		} else if (next.value === "next2") {
-			nextPrev(hwDua, hwTiga);
+			// gambar[1].style.animation = "slidePictHilang .5s";
+			// gambar[2].style.animation = "slidePictMuncul .5s";
+			setTimeout(nextPrev(hwDua, hwTiga), 1000);
 		} else if (next.value === "next3") {
-			nextPrev(hwTiga, hwEmpat);
+			// gambar[2].style.animation = "slidePictHilang .5s";
+			// gambar[3].style.animation = "slidePictMuncul .5s";
+			setTimeout(nextPrev(hwTiga, hwEmpat), 1000);
 		} else if (next.value === "next4") {
-			nextPrev(hwEmpat, hwSatu);
+			// gambar[3].style.animation = "slidePictHilang .5s";
+			// gambar[0].style.animation = "slidePictMuncul .5s";
+			setTimeout(nextPrev(hwEmpat, hwSatu), 1000);
 		}
 	})
 })
@@ -97,12 +108,16 @@ btnNext.forEach(function (next) {
 btnPrev.forEach(function (prev) {
 	prev.addEventListener('click', function () {
 		if (prev.value === "prev1") {
+
 			nextPrev(hwSatu, hwEmpat);
 		} else if (prev.value === "prev2") {
+
 			nextPrev(hwDua, hwSatu);
 		} else if (prev.value === "prev3") {
+
 			nextPrev(hwTiga, hwDua);
 		} else if (prev.value === "prev4") {
+
 			nextPrev(hwEmpat, hwTiga);
 		}
 	})

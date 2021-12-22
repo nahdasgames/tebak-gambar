@@ -54,6 +54,18 @@ h1 {
 	border: none;
 }
 
+.pict {
+	height: 250px;
+	width: 400px;
+	margin-left: 50px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	box-shadow: 5px 5px 10px 3px rgb(196, 196, 241),
+		-5px -5px 10px 3px rgb(196, 196, 241);
+	border-radius: 10px;
+	overflow: hidden
+}
+
 .pilgan {
 	width: 400px;
 	margin-left: 50px;
@@ -75,6 +87,11 @@ h1 {
 	font-size: 16px;
 }
 
+.soal-hewan .gambar {
+	position: relative;
+	;
+}
+
 .soal-hewan,
 .soal-buah {
 	width: 500px;
@@ -86,8 +103,6 @@ h1 {
 .soal-buah img {
 	height: 250px;
 	width: 400px;
-	margin-top: 10px;
-	margin-left: 50px;
 	border-radius: 10px;
 }
 
@@ -100,10 +115,6 @@ h1 {
 	bottom: 357px;
 	border-radius: 10px;
 	opacity: .9;
-	/* display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-content: space-around; */
 }
 
 .facts h3,
@@ -152,6 +163,30 @@ h1 {
 	margin-right: 0;
 }
 
-.github {
-	background-color: transparent;
+
+
+
+
+
+
+/* ANIMASI */
+
+@keyframes slidePictHilang {
+	0% {
+		right: 300px;
+	}
+
+	100% {
+		right: 0;
+	}
+}
+
+@keyframes slidePictMuncul {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 350px;
+	}
 }
