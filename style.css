@@ -63,7 +63,8 @@ h1 {
 	box-shadow: 5px 5px 10px 3px rgb(196, 196, 241),
 		-5px -5px 10px 3px rgb(196, 196, 241);
 	border-radius: 10px;
-	overflow: hidden
+	overflow: hidden;
+	/* display: inline-block; */
 }
 
 .pilgan {
@@ -87,9 +88,8 @@ h1 {
 	font-size: 16px;
 }
 
-.soal-hewan .gambar {
+.pict .gambar {
 	position: relative;
-	;
 }
 
 .soal-hewan,
@@ -173,20 +173,26 @@ h1 {
 
 @keyframes slidePictHilang {
 	0% {
-		right: 300px;
+		/* right: 0px; */
+		opacity: 1;
+	}
+
+	50% {
+		opacity: .5;
 	}
 
 	100% {
-		right: 0;
+		/* right: 350px; */
+		opacity: 0;
 	}
 }
 
 @keyframes slidePictMuncul {
 	0% {
-		left: 0;
+		left: 300px;
 	}
 
 	100% {
-		left: 350px;
+		left: 0px;
 	}
 }

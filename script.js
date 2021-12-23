@@ -72,12 +72,13 @@ btnKeluar.forEach(function (keluar) {
 	})
 })
 
-function nextPrev(hilang, muncul) {
+function nextPrev(hilang, pictHilang, muncul, pictMuncul) {
 	hilang.setAttribute("hidden", true);
-
+	pictHilang.style.animation = "slidePictHilang .5s";
+	pictHilang.setAttribute("hidden", true);
 
 	muncul.removeAttribute("hidden");
-	// muncul.style.animation = "slidePictMuncul 1s";
+	pictMuncul.style.animation = "slidePictMuncul .5s";
 	for (let fact of facts) {
 		fact.setAttribute("hidden", true);
 	}
@@ -86,21 +87,21 @@ function nextPrev(hilang, muncul) {
 btnNext.forEach(function (next) {
 	next.addEventListener('click', function () {
 		if (next.value === "next1") {
-			// gambar[0].style.animation = "slidePictHilang .5s";
-			// gambar[1].style.animation = "slidePictMuncul .5s";
-			setTimeout(nextPrev(hwSatu, hwDua), 1000);
+			// gambar[0].style.animation = "slidePictHilang .7s";
+			// gambar[1].style.animation = "slidePictMuncul .7s";
+			nextPrev(hwSatu, gambar[0], hwDua, gambar[1]);
 		} else if (next.value === "next2") {
-			// gambar[1].style.animation = "slidePictHilang .5s";
-			// gambar[2].style.animation = "slidePictMuncul .5s";
-			setTimeout(nextPrev(hwDua, hwTiga), 1000);
+			// gambar[1].style.animation = "slidePictHilang .7s";
+			// gambar[2].style.animation = "slidePictMuncul .7s";
+			nextPrev(hwDua, gambar[1], hwTiga, gambar[2]);
 		} else if (next.value === "next3") {
-			// gambar[2].style.animation = "slidePictHilang .5s";
-			// gambar[3].style.animation = "slidePictMuncul .5s";
-			setTimeout(nextPrev(hwTiga, hwEmpat), 1000);
+			// gambar[2].style.animation = "slidePictHilang .7s";
+			// gambar[3].style.animation = "slidePictMuncul .7s";
+			nextPrev(hwTiga, gambar[2], hwEmpat, gambar[3]);
 		} else if (next.value === "next4") {
-			// gambar[3].style.animation = "slidePictHilang .5s";
-			// gambar[0].style.animation = "slidePictMuncul .5s";
-			setTimeout(nextPrev(hwEmpat, hwSatu), 1000);
+			// gambar[3].style.animation = "slidePictHilang .7s";
+			// gambar[0].style.animation = "slidePictMuncul .7s";
+			nextPrev(hwEmpat, gambar[3], hwSatu, gambar[0]);
 		}
 	})
 })
