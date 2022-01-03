@@ -78,6 +78,7 @@ function nextPrev(hilang, pictHilang, muncul, pictMuncul) {
 	pictHilang.setAttribute("hidden", true);
 
 	muncul.removeAttribute("hidden");
+	pictMuncul.removeAttribute("hidden");
 	pictMuncul.style.animation = "slidePictMuncul .5s";
 	for (let fact of facts) {
 		fact.setAttribute("hidden", true);
