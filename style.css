@@ -110,7 +110,6 @@ h1 {
 	height: 250px;
 	width: 400px;
 	background-color: aqua;
-	margin-left: 50px;
 	position: absolute;
 	bottom: 357px;
 	border-radius: 10px;
@@ -174,16 +173,12 @@ h1 {
 @keyframes slidePictHilang {
 	0% {
 		/* right: 0px; */
-		opacity: 1;
-	}
-
-	50% {
-		opacity: .5;
+		opacity: 0;
 	}
 
 	100% {
 		/* right: 350px; */
-		opacity: 0;
+		opacity: 1;
 	}
 }
 

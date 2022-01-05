@@ -74,12 +74,11 @@ btnKeluar.forEach(function (keluar) {
 
 function nextPrev(hilang, pictHilang, muncul, pictMuncul) {
 	hilang.setAttribute("hidden", true);
-	pictHilang.style.animation = "slidePictHilang .5s";
 	pictHilang.setAttribute("hidden", true);
 
 	muncul.removeAttribute("hidden");
 	pictMuncul.removeAttribute("hidden");
-	pictMuncul.style.animation = "slidePictMuncul .5s";
+	pictMuncul.style.animation = "slidePictHilang .5s";
 	for (let fact of facts) {
 		fact.setAttribute("hidden", true);
 	}
@@ -88,20 +87,12 @@ function nextPrev(hilang, pictHilang, muncul, pictMuncul) {
 btnNext.forEach(function (next) {
 	next.addEventListener('click', function () {
 		if (next.value === "next1") {
-			// gambar[0].style.animation = "slidePictHilang .7s";
-			// gambar[1].style.animation = "slidePictMuncul .7s";
 			nextPrev(hwSatu, gambar[0], hwDua, gambar[1]);
 		} else if (next.value === "next2") {
-			// gambar[1].style.animation = "slidePictHilang .7s";
-			// gambar[2].style.animation = "slidePictMuncul .7s";
 			nextPrev(hwDua, gambar[1], hwTiga, gambar[2]);
 		} else if (next.value === "next3") {
-			// gambar[2].style.animation = "slidePictHilang .7s";
-			// gambar[3].style.animation = "slidePictMuncul .7s";
 			nextPrev(hwTiga, gambar[2], hwEmpat, gambar[3]);
 		} else if (next.value === "next4") {
-			// gambar[3].style.animation = "slidePictHilang .7s";
-			// gambar[0].style.animation = "slidePictMuncul .7s";
 			nextPrev(hwEmpat, gambar[3], hwSatu, gambar[0]);
 		}
 	})
@@ -110,17 +101,13 @@ btnNext.forEach(function (next) {
 btnPrev.forEach(function (prev) {
 	prev.addEventListener('click', function () {
 		if (prev.value === "prev1") {
-
-			nextPrev(hwSatu, hwEmpat);
+			nextPrev(hwSatu, gambar[0], hwEmpat, gambar[3]);
 		} else if (prev.value === "prev2") {
-
-			nextPrev(hwDua, hwSatu);
+			nextPrev(hwDua, gambar[1], hwSatu, gambar[0]);
 		} else if (prev.value === "prev3") {
-
-			nextPrev(hwTiga, hwDua);
+			nextPrev(hwTiga, gambar[2], hwDua, gambar[1]);
 		} else if (prev.value === "prev4") {
-
-			nextPrev(hwEmpat, hwTiga);
+			nextPrev(hwEmpat, gambar[3], hwTiga, gambar[2]);
 		}
 	})
 
@@ -129,13 +116,13 @@ btnPrev.forEach(function (prev) {
 btnNext.forEach(function (next) {
 	next.addEventListener('click', function () {
 		if (next.value === "next5") {
-			nextPrev(buSatu, buDua);
+			nextPrev(buSatu, gambar[4], buDua, gambar[5]);
 		} else if (next.value === "next6") {
-			nextPrev(buDua, buTiga);
+			nextPrev(buDua, gambar[5], buTiga, gambar[6]);
 		} else if (next.value === "next7") {
-			nextPrev(buTiga, buEmpat);
+			nextPrev(buTiga, gambar[6], buEmpat, gambar[7]);
 		} else if (next.value === "next8") {
-			nextPrev(buEmpat, buSatu);
+			nextPrev(buEmpat, gambar[7], buSatu, gambar[4]);
 		}
 	})
 })
@@ -143,13 +130,13 @@ btnNext.forEach(function (next) {
 btnPrev.forEach(function (prev) {
 	prev.addEventListener('click', function () {
 		if (prev.value === "prev5") {
-			nextPrev(buSatu, buEmpat);
+			nextPrev(buSatu, gambar[4], buEmpat, gambar[7]);
 		} else if (prev.value === "prev6") {
-			nextPrev(buDua, buSatu);
+			nextPrev(buDua, gambar[5], buSatu, gambar[4]);
 		} else if (prev.value === "prev7") {
-			nextPrev(buTiga, buDua);
+			nextPrev(buTiga, gambar[6], buDua, gambar[5]);
 		} else if (prev.value === "prev8") {
-			nextPrev(buEmpat, buTiga);
+			nextPrev(buEmpat, gambar[7], buTiga, gambar[6]);
 		}
 	})
 
