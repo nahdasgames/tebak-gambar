@@ -191,3 +191,59 @@ h1 {
 		left: 0px;
 	}
 }
+
+
+
+
+/* Breakpoint */
+
+@media screen and (max-width: 550px) {
+
+	.layar {
+		height: 500px;
+		width: 350px;
+	}
+
+	.soal-hewan,
+	.soal-buah {
+		width: 200px;
+	}
+
+	.pict {
+		height: 200px;
+		width: 300px;
+		margin-left: 23px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.nav {
+		margin-left: 20px;
+	}
+
+
+	.pilgan {
+		width: 300px;
+		margin-left: 23px;
+	}
+
+	.jwb {
+		/* margin: 5px; */
+		text-align: center;
+		line-height: 40px;
+		border-radius: 30px;
+		width: 60px;
+		height: 40px;
+		font-size: 13px;
+	}
+
+	.soal-hewan .img-nav,
+	.soal-buah .img-nav {
+		height: 60px;
+		width: 60px;
+	}
+
+	.soal-hewan .btn-next {
+		margin-right: 70px;
+	}
+}
